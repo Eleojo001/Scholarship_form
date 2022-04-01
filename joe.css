@@ -1,0 +1,126 @@
+*{padding: 0; margin: 0;}
+.header{display: none;}
+.nav{
+    height: 80px;background-color: rgb(28, 49, 6); display: flex; justify-content: space-between;
+}
+.nav .left-m3, .right-m3{display: none;}
+.nav a{text-decoration: none; color: yellow; padding: 5px;}
+.nav .left-m, .right-m, .btn-m8, .btn-m, .footer-m, .footer-m8{display: none;}
+.formhead-m{display: none;}
+.left{display: flex;}
+.left img{
+    width: 100px;
+}
+.left, .row2{padding-top: 15px;}
+.right .row1{padding-top: 30px;margin-right: 25px;}
+/* form design */
+.body-sec{background-image:url(./soccer2.png);
+width: 100%;
+}
+.container{width: 81%;margin: auto; background-color: rgba(68, 110, 5, 0.685);padding: 30px; color: white;}
+.container p{color: white;}
+.container h2{text-align: center;}
+.container-2 h2{display: none;}
+.cent3{display: none;}
+.container-2 .sec1-m, .sec2-m{display: none; }
+/* .sch-m, .cent-m{display: none;} */
+.sec1{display: flex;width: 100%; justify-content: space-between;}
+
+.sec2{display: flex;width: 100%; justify-content: space-between;}
+
+/* input tag */
+input{width: 250px;height: 27px;border-radius: 10px;}
+select{width: 255px;height: 31px;border-radius: 12px;}
+label{color: red;}
+.formhead{text-align: center;color: whitesmoke;}
+.cent, .h3{text-align: center;margin-top: 20px; color: white;}
+.sch{margin-left: 0px}
+/* .f11{width: 507px;} */
+/* button */
+.btn{
+    padding: 5px;border-radius: 10px;width: 120px;border: 0;margin-top: 20px;margin-left: 45%;color: white;background-color: black;
+}
+
+/* summary */
+.summary-1{text-align: center;}
+
+/* footer section */
+.footer{background-color: rgb(28, 49, 6);
+    height: 200px;text-align: center;
+    }
+footer .spons{grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+gap: 10px;align-items: center;
+}
+.footer h2{color: white; padding-top: 10px; padding-left: 70px;}
+.footer img{width: 100px;padding-left: 50px;}
+.footer-m{display: none;}
+.copy{text-align: center;color: white;margin-left: 7%;padding: 20px;}
+
+/* media query */
+
+
+/* media query for 800px */
+@media(max-width:800px){
+.nav .left-m, .right-m{display: none;}
+.container h2{color: white; text-align: center;}
+.footer{display: none;}
+.footer-m{display: none;}
+.footer-m8{display: block;}
+.footer-m8{background-color: rgb(28, 49, 6);
+    height: 150px;color: white;text-align: center;}
+.footer-m8 img{width: 80px;margin-left: 40px;}
+.formhead-m{display: none; color: white;}
+.summary{background-color: white; padding: top 10px;}
+.btn-m8{ display: block; padding: 5px;border-radius: 10px;width: 120px;border: 0;margin-top: 20px;margin-left: 45%;color: white;background-color: black;
+}
+.btn, .btn-m{display: none;}
+}
+
+
+@media(max-width:700px){
+.header{display: none;}
+.nav .left, .right{ display: none;}
+.nav{padding-top: 10px;}
+.nav .left-m{display: flex;}
+.nav .left-m img{width: 100px;}
+.nav .left-m .row2-m{padding-top: 20px;}
+.nav .left-m3, .right-m3{display: none;}
+.nav .right-m{padding: 20px; display: block;}
+.body-sec .formhead{display: none;}
+.body-sec .formhead-m{color: whitesmoke;font-size: 10px;text-align: center;}
+.sec1, .sec2{display: block;}
+.container{display: block;}
+
+.container .sec1{display: block;}
+.container .sec2{display: block;}
+.container .cent, .sch{display: block;}
+
+.btn{display: none;}
+
+.footer{display: none;}
+.footer-m8{display: none;}
+.footer-m{background-color: rgb(28, 49, 6);height: 350px;display: block;
+}
+.footer-m h2{color: white; padding-top: 10px; padding-left: 70px; text-align: center;}
+.footer-m .spons{ display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+    gap: 20px;
+}
+.footer-m img{width: 70px; padding-left: 40px;}
+.copy1{margin-left: 123%;color: white;}
+
+
+}
+
+@media(max-width:420px){
+    .nav{display: none;}
+    .header{height: 70px;background-color: rgb(28, 49, 6); display: flex; justify-content: space-between;padding-top: 15px;}
+    a{text-decoration: none; color: yellow; padding: 5px; font-size: 12px;}
+    .header .left-m420 img{
+        width: 100px;}
+    .header .left-m420{display: flex;}
+    .header .left-m420 .row2-m{padding-top: 15px;}
+    .header .right-m420{padding-top: 15px;}
+    .copy1{margin-left: 123%;color: white;}
+    
+    }
